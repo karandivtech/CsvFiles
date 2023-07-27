@@ -1,6 +1,7 @@
 const axios = require("axios");
+require("dotenv").config();
 
-const API_URL = "https://jsonplaceholder.typicode.com/posts";
+const API_URL = process.env.API_BASE_URL;
 
 const fetchDataFromAPI = async () => {
   try {
